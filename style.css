@@ -1,0 +1,879 @@
+
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+header{
+    padding: 10px 0px 15px 0px;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    background-color: white;
+    z-index: 100;
+    height: 64px;
+}
+.container{
+    width: 100%;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.row_1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.row_2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.row_3{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+}
+.row_4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#menu{
+    display: none;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.head{
+    color: #5d09b7;
+    font-size: 32px;
+}
+a{
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0px 25px;
+    color: black;
+}
+#anchor-mobile{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 14px;
+}
+#anchor-mobile li{
+    list-style-type: none;
+    padding-bottom: 10px;
+}
+#anchor-mobile li a{
+    color:black;
+}
+#close-mobile{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+#dropdown-menu{
+    display: none;
+    width: 100%;
+    margin-left: -16px;
+    margin-top: -37px;
+}
+.find:hover{
+    background-color: #330a75;
+    border: 1px solid #330a75;
+}
+.signup{
+    border: 1px solid #5d09b7;
+    padding: 5px 25px;
+    border-radius: 20px;
+    background-color: #5d09b7;
+    color: white;
+}
+.signup_1{
+    border: 1px solid white;
+    padding: 7px 25px;
+    border-radius: 20px;
+    background-color: #5d09b7;
+    color: white;
+    display: none;
+}
+.signup_1:hover{
+    background-color: #330a75;
+    border: 1px solid #330a75;
+}
+.btn-first{
+    display: flex;
+    gap: 15px;
+}
+#sec_1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.2)), url("assets/pexels-franco30-12193105.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+    margin-top: 60px;
+}
+.num_1{
+    width: 40%;
+    padding: 20px 30px;
+    background-color: #fffefc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 100px;
+    margin-left: 70px;
+    padding-bottom: 50px;
+}
+.num_1 p{
+    text-align: justify;
+    margin-top: -10px;
+    font-size: 18px;
+    color: black;
+}
+.num_1 a{
+    color: white;
+}
+.num_1 h2{
+    color: black;
+}
+.find{
+    border: 1px solid #5d09b7;
+    width: 80%;
+    text-align: center;
+    padding: 5px 0px;
+    background-color: #5d09b7;
+}
+.num_2{
+    width: 40%;
+    margin-top: 40px;
+}
+.num_2 h2{
+    color: rgb(253, 252, 252);
+    font-size: 30px;
+    line-height: 40px;
+}
+.read{
+    border: 1px solid gainsboro;
+    padding: 7px 12px;
+    background: rgba(255, 255, 255, 0.20);
+    color: #fffffe;
+    border-radius: 20px;
+}
+.num_3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+.num_3 h2{
+    font-size: 30px;
+    margin-top: -5px;
+}
+.num_4 h2{
+    font-size: 30px;
+    margin-top: -5px;
+}
+.num_3 h4{
+    font-size: 24px;
+    margin-top: -2px;
+    text-align: center;
+}
+.num_4{
+    display: flex;
+    flex-direction: column;
+}
+.num_4 h4{
+    font-size: 21px;
+    margin-top: -2px;
+}
+.num_3 p{
+    font-size: 18px;
+    margin-top: -15px;
+    text-align: center;
+    line-height: 30px;
+}
+.num_4 p{
+    font-size: 18px;
+    margin-top: -15px;
+}
+.num_3 a{
+    border: 1px soli #ebdcfa;
+    background-color: #5d09b7;
+    padding: 7px 20px;
+    color: white;
+    border-radius: 20px;
+    width: 100%;
+}
+.num_3 a:hover{
+    background-color: #330a75;
+    border: 1px solid #330a75;
+}
+.num_4 a{
+    border: 1px soli #ebdcfa;
+    background-color: #5d09b7;
+    padding: 7px 50px;
+    color: white;
+    border-radius: 20px;
+    font-size: 17px;
+    width: 100%;
+}
+.num_4 a:hover{
+    background-color: #330a75;
+    border: 1px solid #330a75;
+}
+#get{
+    border-bottom: 4px solid #4a56f8;
+    border-radius: 4px;
+}
+.num_4{
+    width: 29%;
+}
+.sec_2{
+    margin-top: 100px;
+}
+.blood-image{
+    width: 150%;
+}
+.blood-image-1{
+    width: 120%;
+}
+.table{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.table_1{
+    display: flex;
+}
+#para{
+    margin-top: -24px;
+    margin-left: 26px;
+    width: 100%;
+}
+.sec_3{
+    margin-top: 40px;
+}
+.reg{
+    margin-top: 10px;
+}
+.sec_4{
+    background-color: black;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 40px;
+}
+.num_5 h1{
+    text-align: center;
+    font-size:35px;
+    border-bottom: 4px solid #4a56f8;
+    border-radius: 4px;
+    color: white;
+    margin-top: -10px;
+}
+.num_6 h1{
+    text-align: center;
+    font-size:35px;
+    border-bottom: 4px solid #4a56f8;
+    border-radius: 4px;
+    color: black;
+    margin-top: -10px;
+}
+.num_5{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+    width: 80%;
+}
+.num_6{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+    width: 80%;
+}
+.num_7{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+#click{
+    border: 1px soli #ebdcfa;
+    background-color: #5d09b7;
+    padding: 7px 30px;
+    color: white;
+    border-radius: 20px;
+    font-size: 17px;
+}
+.num_5 h2{
+    font-size:24px ;
+    margin-top: -1px;
+    color: white;
+}
+.num_6 h2{
+    font-size:24px ;
+    margin-top: -1px;
+    color: black;
+}
+.num_5 p{
+    margin-top: -1px;
+    font-size: 20px;
+    color: white;
+}
+.num_6 p{
+    margin-top: -1px;
+    font-size: 20px;
+    color: black;
+}
+.sec_5{
+    margin-top: 40px;
+}
+#health{
+    border-bottom: 4px solid darkviolet;
+    border-radius: 4px;
+}
+.row_3 b{
+    font-size: 30px;
+}
+.num_7 p{
+    font-size: 20px;
+}
+.begin{
+    font-size: 30px;
+    font-weight: 600;
+}
+#para-2{
+    margin-top: -10px;
+}
+.list li{
+    font-size: 20px;
+    padding-top: 10px;
+}
+.num_7 a{
+    border: 1px solid darkviolet;
+    background-color: darkviolet;
+    border-radius: 20px;
+    font-size: 18px;
+    padding: 7px 14px;
+    color: white;
+    width: 100%;
+}
+.know{
+    margin-top: 20px;
+}
+.sec_6{
+    margin-top: 100px;
+}
+.sec_6 h1{
+    font-size: 35px;
+    text-align: center;
+    text-decoration: underline darkviolet;
+}
+
+.final{
+    display: flex;
+    gap: 50px;
+}
+footer{
+    background-color: black;
+    padding: 20px 50px;
+    margin-top: 60px;
+}
+.row_6{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    gap: 50px;
+}
+.row_6 li{
+    color: white;
+    font-size: 20px;
+    padding: 10px 0px;
+}
+.row_6 span{
+    color: white;
+}
+.row_6 a{
+    color: white;
+}
+.contact{
+    color: white;
+}
+.row_7{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0px;
+}
+.footer-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media(max-width:1100px){
+    .anchor_1{
+        display: none;
+    }
+    .row_1{
+        flex-direction: column-reverse;
+    }
+    .num_2{
+        width: 90%;
+        justify-content: center;
+    }
+    .num_1{
+        width: 70%;
+        padding-bottom: 40px;
+        margin-top: 150px;
+        margin-left: -15px;
+        box-shadow: 1px 2px 2px gainsboro;
+    }
+    #menu{
+        display: block;
+    }
+    .sec_2{
+        margin-top: 200px;
+    }
+    .row_3{
+        flex-direction: column;
+        gap: 0;
+    }
+    .num_4{
+        width: 85%;
+    }
+    .blood-image{
+        margin-left: -50px;
+    }
+    .row_4{
+        flex-direction: column;
+    }
+    .num_7{
+        width: 90%;
+        margin-top: 20px;
+    }
+}
+@media(max-width:820px){
+    .sec_2{
+        margin-top: 250px;
+    }
+}
+@media(max-width:710px){
+    .num_1{
+        width: 70%;
+    }
+    .sec_2{
+        margin-top: 250px;
+    }
+    
+}
+@media(max-width:610px){
+    header{
+        height: 50px;
+    }
+    .num_1{
+        width: 80%;
+    }
+    .num_1 h2{
+        font-size: 20px;
+    }
+    .num_1 p{
+        font-size: 15px;
+    }
+    .num_1 a{
+        font-size: 15px;
+    }
+    .num_3 h2{
+        font-size: 20px;
+    }
+    .num_3 p{
+        font-size: 15px;
+    }
+    .num_3 h4{
+        font-size:17px ;
+    }
+    .num_3 a{
+        font-size: 15px;
+    }
+    .num_4 h2{
+        font-size: 20px;
+    }
+    .num_4 p{
+        font-size: 15px;
+    }
+    .num_4 h4{
+        font-size:17px ;
+    }
+    .num_4 a{
+        font-size: 15px;
+    }
+    .num_5 h1{
+        font-size: 20px;
+    }
+    .num_5 b{
+        font-size: 20px;
+    }
+    .num_5 img{
+        width: 60px;
+    }
+    .num_5 p{
+        font-size: 18px;
+    }
+    .num_5 h2{
+        font-size: 20px;
+    }
+    .num_6 h1{
+        font-size: 20px;
+    }
+    .num_6 b{
+        font-size: 20px;
+    }
+    .num_6 img{
+        width: 60px;
+    }
+    .num_6 p{
+        font-size: 18px;
+    }
+    .num_6 h2{
+        font-size: 20px;
+    }
+    #click{
+        font-size: 18px;
+        padding: 6px 14px;
+    }
+    .logo img{
+        width: 20px;
+    }
+    .num_7{
+        margin-top: -60px;
+    }
+    .num_7 b{
+        font-size: 20px;
+    }
+    .num_7 p{
+        font-size: 16px;
+    }
+    .num_7 a{
+        font-size: 16px;
+        padding: 6px 18px;
+    }
+    .num_7 li{
+        font-size: 16px;
+    }
+    .blood-image-1{
+        width: 90%;
+    }
+    .num_2 h2{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .num_2 a{
+        font-size: 15px;
+        padding: 5px 12px;
+    }
+    .logo img{
+        width: 20px;
+    }
+    #menu{
+        width: 15px;
+    }
+    #close-mobile{
+        width: 18px;
+    }
+    .logo b{
+        font-size: 20px;
+    }
+    .row a{
+        font-size: 12px;
+    }
+    #sec_1{
+        margin-top: 0px;
+    }
+    .num_2{
+        padding-top: 30px;
+    }
+    .num_1{
+        margin-top: 100px;
+    }
+    .sec_2{
+        margin-top: 80px;
+    }
+    .row_2 img{
+        width: 42px;
+    }
+    .table img{
+        width: 18px;
+    }
+    #para{
+        margin-top: -22px;
+    }
+    .blood-image{
+        width: 100%;
+        margin-left: -10px;
+    }
+    .sec_3{
+        margin-top: 0;
+    }
+    .sec_6{
+        margin-top: 40px;
+    }
+    .sec_6 h1{
+        font-size: 22px;
+    }
+    .num_7{
+        margin-top: 40px;
+    }
+    .row_6 li{
+        font-size: 16px;
+    }
+    .row_6 span{
+        font-size: 16px;
+    }
+    .row_6 a{
+        font-size: 16px;
+    }
+    .contact{
+        font-size: 18px;
+    }
+    .row_7 img{
+        width: 25px;
+    }
+}
+@media(max-width:550px){
+    .sec_2{
+        margin-top: 100px;
+    }
+    #sec_1{
+        margin-top: 40px;
+    }
+}
+@media(max-width:460px){
+    header{
+        height: 50px;
+    }
+    .num_1{
+        width: 85%;
+        margin-top: 40px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        background:rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(6px);
+        padding-bottom: 18px;
+        box-shadow: 0px 0px 0px;
+    }
+    .row img{
+        width: 22px;
+    }
+    .logo{
+        align-items: center;
+    }
+    .row{
+        width: 100%;
+    }
+    .row_2 img{
+        width: 38px;
+    }
+    .row b{
+        font-size: 22px;
+    }
+    .row a{
+        font-size: 12px;
+    }
+    #menu{
+        width: 18px;
+        margin-left: -30px;
+    }
+    #close-mobile{
+        width: 18px;
+    }
+    .num_2 h2{
+        font-size: 16px;
+    }
+    .num_2 a{
+        font-size: 14px;
+        padding: 4px 10px;
+    }
+    .signup{
+        display: none;
+    }
+    .signup_1{
+        display: block;
+    }
+    .num_1 h2{
+        font-size: 16px;
+        color: white;
+    }
+    .num_1 p{
+        font-size: 14px;
+        color: white;
+    }
+    .num_1 a{
+        font-size: 14px;
+        padding: 4px 10px;
+    }
+    .num_3{
+        width: 90%;
+    }
+    .num_3 h2{
+        font-size: 16px;
+    }
+    .num_3 p{
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .num_3 a{
+        font-size: 14px;
+        padding: 7px 12px;
+    }
+    .num_3 h4{
+        font-size: 15px;
+    }
+    .num_4 h2{
+        font-size: 16px;
+    }
+    .num_4 p{
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .num_4 a{
+        font-size: 14px;
+        padding: 7px 10px;
+    }
+    .num_4 h4{
+        font-size: 15px;
+    }
+    .blood-image{
+        width: 90%;
+        margin-left: 20px;
+    }
+    .reg{
+        margin-top: 4px;
+    }
+    #get{
+        border-bottom: 2px solid #7a06f7;
+        border-radius:2px ;
+    }
+    .sec_2{
+        margin-top: 25px;
+    }
+    .row_4 h1{
+        font-size: 18px;
+    }
+    .row_4 h2{
+        font-size: 16px;
+    }
+    .row_4 p{
+        font-size: 14px;
+    }
+    #click{
+        font-size: 14px;
+        padding: 5px 20px;
+    }
+    .first-ever-image{
+        width: 20px;
+    }
+    .num_5{
+        width: 92%;
+    }
+    .num_6{
+        width: 92%;
+    }
+    .num_5 b{
+        font-size: 18px;
+    }
+    .num_6 b{
+        font-size: 18px;
+    }
+    .one-image{
+        width: 70%;
+    }
+    .two-image{
+        width: 70%;
+    }
+    #para-1{
+        margin-top: -15px;
+    }
+    .here{
+        margin-top: -15px;
+    }
+    .reg a{
+        padding: 5px 20px;
+    }
+    .num_3 a{
+        padding: 5px 15px;
+    }
+    .num_7 b{
+        font-size :16px; ;
+    }
+    .num_7 p{
+        font-size: 14px;
+    }
+    .num_7 li{
+        font-size: 14px;
+    }
+    .num_7 a{
+        font-size: 14px;
+        padding: 4px 12px;
+    }
+    .num_7{
+        width: 90%;
+    }
+    .blood-image-1{
+        width: 80%;
+        margin-left: 30px;
+    }
+    .sec_6{
+        margin-top: 40px;
+    }
+    .row_6 li{
+        font-size: 14px;
+    }
+    .row_6 span{
+        font-size: 14px;
+    }
+    .row_6 a{
+        font-size: 14px;
+    }
+    .contact{
+        font-size: 16px;
+    }
+    .row_7 img{
+        width: 20px;
+    }
+    .row_6{
+        gap: 10px;
+    }
+}
+@media(max-width:365px){
+    .sec_2{
+        margin-top: 80px;
+    }
+}

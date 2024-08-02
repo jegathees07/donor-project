@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script type="module" src="firebaseauth.js"></script>
+</head>
+<body>
+    <section id="signup-fullpage">
+        <div class="container">
+            <div class="row">
+                <div class="left-side-content">
+                    <img src="assets/Secure Server-amico.svg" alt="">
+                </div>
+                <div id="signup-page" class="sign">
+                    <main>
+                        <h1 class="form-heading">Sign up</h1>
+                        <form action="" id="signup-form">
+                            <div id="signUpMessage" class="messageDiv" style="display: none"></div>
+                            <div class="form-inputs">
+                                <label class="form-label" for="name">FullName:</label>
+                                <input type="text" name="name" id="name">
+                                <span class="message">Your name is too short</span>
+                            </div>
+                            <div class="form-inputs" id="form-control">
+                                <label class="form-label" for="email">Email:</label>
+                                <input type="email" name="email" id="email">
+                                <span class="message">Check your email*</span>
+                            </div>
+                            <div class="form-inputs">
+                                <label class="form-label" for="password">Password:</label>
+                                <input type="password" name="password" id="password">
+                                <span class="message">Password must contains min 6 letters*</span>
+                            </div>
+                            <div class="form-inputs">
+                                <button  id="btn-signup"  type="submit">Sign up</button>
+                            </div>
+                            <div class="account">
+                                <b>Already have a account?</b><a href="#" onclick="openLoginPage()">Login</a>
+                            </div>
+                        </form>
+                    </main>
+                </div>
+    </section>
+    <section id="login-fullpage">
+        <div class="container">
+            <div class="row">
+                <div class="left-side-content">
+                    <img src="assets/Secure Server-amico.svg" alt="">
+                </div>
+                <div id="signup-page">
+                    <main>
+                        <h1 class="form-heading">Login</h1>
+                        <form action="" id="login-form">
+                            <div id="signInMessage" class="messageDiv" style="display: none"></div>
+                            <div class="form-inputs" id="form-control">
+                                <label class="form-label" for="email-login">Email:</label>
+                                <input type="email" name="email" id="email-login">
+                                <span class="message">Check your email*</span>
+                            </div>
+                            <div class="form-inputs">
+                                <label class="form-label" for="password-login">Password:</label>
+                                <input type="password" name="password" id="password-login">
+                                <span class="message">Password must contains min 6 letters*</span>
+                            </div>
+                            <div class="form-inputs">
+                                <button  id="btn-login"  type="submit">Login</button>
+                            </div>
+                            <div class="account">
+                                <b>Create an account?</b><a href="#" onclick="openSignupPage()">SignUp</a>
+                            </div>
+                        </form>
+                    </main>
+                </div>
+    </section>
+<script src="script.js"></script>
+</body>
+</html>

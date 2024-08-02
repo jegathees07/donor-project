@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="finddonor.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="logo">
+                    <a href="">
+                    <img src="assets/blood-drop.png" alt="" width="32px">
+                    <b class="head">Do<b class="head_1">life</b>
+                </a>
+                </b>
+                </div>
+                <div class="anchor_1">
+                    <a href="index.html">Home</a>
+                    <a href="finddonor.html">Find Donors</a>
+                    <a href="bloodbank.html">Find Centre</a>
+                    <a href="register.html">Register</a>
+                    <a href="getintouch.html">About</a>
+                    <a href="#contactLink">Contact</a>
+                </div>
+                <div>
+                    <a class="signup" href="signup.html">Sign up &rarr;</a>
+                </div>
+                <div>
+                    <img id="menu" onclick="openSlideBar()" src="assets/menu (2).png" alt="" width="23px">
+                </div>
+                <div id="dropdown-menu">
+                    <img id="close-mobile" onclick="closeSlideBar()"  src="assets/cross-mark.png" alt="" width="23px">
+                    <div id="anchor-mobile">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="finddonor.html">Find donors</a></li>
+                    <li><a href="bloodbank.html">Find centre</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="getintouch.html">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="donor-row">
+        <div class="donor-left">
+            <img src="assets/Finding brilliant ideas-amico.svg" alt="">
+        </div>
+        <div class="donor-right">
+            <h1>Search Donors</h1>
+            <div class="donor-input">
+                <label for="blood-do">Blood Group:</label>
+                <input type="text" id="blood-do">
+            </div>
+            <div class="donor-input">
+                <label for="place-do">Place:</label>
+                <input type="text" id="place-do">
+            </div>
+            <button class="donor-btn" onclick="getDonorInfo()">Get Donor Info</button>
+            </form>
+        </div>
+    </section>
+    <div id="result">
+        <img id="user" src="assets/user.png" alt="" style="display: none;" width="100px">
+    </div>
+    <script src="finddonor.js"></script>
+</body>
+</html>

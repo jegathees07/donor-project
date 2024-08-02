@@ -1,0 +1,399 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+header{
+    padding: 10px 0px 15px 0px;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    background-color: white;
+    z-index: 100;
+}
+.container{
+    width: 100%;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+#menu{
+    display: none;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.head{
+    color: #5d09b7;
+    font-size: 32px;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0px 25px;
+    color: black;
+}
+.signup{
+    border: 1px solid #5d09b7;
+    padding: 5px 25px;
+    border-radius: 20px;
+    background-color: #5d09b7;
+    color: white;
+}
+.logo_1{
+    display: flex;
+    align-items: center;
+}
+.row_1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 100px;
+}
+.first-image{
+    width: 150%;
+}
+.main-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(125, 15, 235);
+    text-decoration: underline rgb(125, 15, 235);
+}
+.main-form-content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.80rem;
+}
+.form-label{
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.form-input{
+    width: 100%;
+    padding: 4px 2px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    font-size: 16px;
+}
+::placeholder{
+    font-size: 15px;
+}
+option{
+    font-size: 16px;
+    padding: 8px 5px;
+    color: black;
+}
+.main{
+    padding: 20px 30px;
+}
+#btn-submit{
+    border-radius: 20px;
+    width: 20%;
+    padding: 8px;
+    background-color: #5d09b7;
+    border: 1px solid  #5d09b7;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.num_1{
+    width: 40%;
+}
+.num_2{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    width: 90%;
+    padding: 0px 10px 0px 100px;
+}
+.num_2 b{
+    color: #5d09b7;
+}
+.num_2 p,b{
+    font-size: 20px;
+}
+.logo_1{
+    align-items: center;
+    justify-content: center;
+}
+.benefits{
+    text-align: center;
+}
+.sec_2{
+    margin-top: 70px;
+}
+.sec_1{
+    margin-top: 70px;
+}
+footer{
+    background-color: black;
+    padding: 20px 50px;
+    margin-top: 60px;
+}
+.row_6{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    gap: 50px;
+}
+.row_6 li{
+    color: white;
+    font-size: 20px;
+    padding: 10px 0px;
+}
+.row_6 span{
+    color: white;
+}
+.row_6 a{
+    color: white;
+}
+.contact{
+    color: white;
+}
+.row_7{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0px;
+}
+.footer-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.popup{
+    font-size: 14px;
+    font-weight: 600;
+    visibility: hidden;
+}
+.error-1{
+    border: 1px solid red;
+}
+.error{
+    color: red;
+    visibility: visible;
+}
+.correct{
+    border: 1px solid rgb(1, 182, 1);
+    color: rgb(1, 182, 1);
+}
+input::-webkit-inner-spin-button,input::-webkit-outer-spin-button{
+    appearance: none;
+    outline: none;
+}
+@media(max-width:1100px){
+    .anchor_1{
+        display: none;
+    }
+    #menu{
+        display: block;
+    }
+    .row_1{
+        flex-direction: column;
+    }
+    .num_1{
+        width: 70%;
+        margin-top: -60px;
+    }
+    .form-label{
+        font-size: 16px;
+    }
+    .first-image{
+        width: 140%;
+        margin-top: 50px;
+    }
+    #btn-submit{
+        font-size: 14px;
+        width: 30%;
+    }
+    .num_2{
+        padding: 0px 0px 0px 40px;
+    }
+    .sec_1{
+        margin-top: 10px;
+    }
+    .num_1{
+        margin-top: -130px;
+    }
+}
+@media(max-width:770px){
+    .num_1{
+        width: 80%;
+    }
+    .first-image{
+        width: 90%;
+        margin-left: 20px;
+    }
+    .logo img{
+        width: 20px;
+    }
+    #menu{
+        width: 15px;
+    }
+    .logo b{
+        font-size: 20px;
+    }
+    .row a{
+        font-size: 12px;
+    }
+    .num_2{
+        padding: 0px 0px 0px 30px;
+    }
+    .num_2 p,b{
+        font-size: 18px;
+    }
+    .logo_1 b{
+        font-size: 20px;
+    }
+    .logo_1 img{
+        width: 20px;
+    }
+    .main-heading{
+        font-size: 22px;
+    }
+}
+@media(max-width:610px){
+    .num_2{
+        padding: 0px 0px 0px 30px;
+    }
+    .row_6 li{
+        font-size: 16px;
+    }
+    .row_6 span{
+        font-size: 16px;
+    }
+    .row_6 a{
+        font-size: 16px;
+    }
+    .contact{
+        font-size: 18px;
+    }
+    .row_7 img{
+        width: 25px;
+    }
+    .logo img{
+        width: 20px;
+    }
+    .logo b{
+        font-size: 20px;
+    }
+    .main-form-content{
+        flex-direction: column;
+        gap: 0.50rem;
+    }
+    .form-input{
+        width: 100%;
+    }
+    .num_1{
+        margin-top: -150px;
+    }
+}
+@media(max-width:460px){
+    .first-image{
+        margin-top: 30px;
+        width: 50%;
+    }
+    .signup{
+        display: none;
+    }
+    .num_1{
+        width: 100%;
+    }
+    .form-label{
+        font-size: 16px;
+    }
+    .form-input{
+        padding: 4px 2px;
+    }
+    .first-image{
+        width: 80%;
+        margin-left: 30px;
+    }
+    #btn-submit{
+        font-size: 14px;
+        width: 30%;
+        padding: 6px 12px;
+    }
+    .row img{
+        width: 22px;
+    }
+    .logo{
+        align-items: center;
+    }
+    .logo_1 b{
+        font-size: 18px;
+    }
+    .logo img{
+        width: 18px;
+    }
+    .logo b{
+        font-size: 18px;
+    }
+    .logo_1 img{
+        width: 18px;
+    }
+    .row{
+        width: 100%;
+    }
+    .row b{
+        font-size: 22px;
+    }
+    .row a{
+        font-size: 12px;
+    }
+    #menu{
+        width: 18px;
+        margin-left: -30px;
+    }
+    .num_2{
+        width: 95%;
+        padding-right: 10px;
+    }
+    .num_2 p,b{
+        font-size: 15px;
+    }
+    .num_2 h2{
+        font-size: 17px;
+    }
+    .sec_2{
+        margin-top: 28px;
+    }
+    .main-heading{
+        font-size: 18px;
+    }
+    .row_6 li{
+        font-size: 14px;
+    }
+    .row_6 span{
+        font-size: 14px;
+    }
+    .row_6 a{
+        font-size: 14px;
+    }
+    .contact{
+        font-size: 16px;
+    }
+    .row_7 img{
+        width: 20px;
+    }
+    .row_6{
+        gap: 10px;
+    }
+}

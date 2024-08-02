@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bloodbank.css">
+    <title>Blood bank-Dolife</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="logo">
+                    <a href="">
+                    <img src="assets/blood-drop.png" alt="" width="32px">
+                    <b class="head">Do<b class="head_1">life</b>
+                </a>
+                </b>
+                </div>
+                <div class="anchor_1">
+                    <a href="index.html">Home</a>
+                    <a href="finddonor.html">Find Donors</a>
+                    <a href="bloodbank.html">Find Centre</a>
+                    <a href="register.html">Register</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div>
+                    <a class="signup" href="signup.html">Sign up &rarr;</a>
+                </div>
+                <div>
+                    <img id="menu" onclick="openSlideBar()" src="assets/menu (2).png" alt="" width="23px">
+                </div>
+                <div id="dropdown-menu">
+                    <img id="close-mobile" onclick="closeSlideBar()"  src="assets/cross-mark.png" alt="" width="23px">
+                    <div id="anchor-mobile">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="finddonor.html">Find donors</a></li>
+                    <li><a href="bloodbank.html">Find centre</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="getintouch.html">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="sec-1">
+        <div class="container">
+            <div class="row-1">
+                <div>
+                    <img src="assets/one.png" alt="">
+                </div>
+                <div>
+                    <h2>Blood bank centers</h2>
+                </div>
+                <div>
+                    <b>"Seek out the blood banks"</b>
+                </div>
+                <div>
+                    <p>Discover and locate your nearest blood bank centers easily through our DoLife webpage. With just a few clicks, you can find a nearby facility and make a lifesaving donation. Visit us today to support your community and save lives.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec-2">
+        <div class="search-bank">
+            <h1>Search Blood Centers</h1>
+            <div class="aligns">
+            <input type="text" id="searchInput" placeholder="Search">
+            <button type="button" id="searchbutton">Enter</button>
+        </div>
+            <div id="resultsContainer">
+            </div>
+        </div>
+    <div class="sliders">
+        <div class="slides">
+                <div class="slide-card" id="cards-next-slide-1" >
+                    <div class="total">
+                <div class="doctor-container">
+                    <div>
+                    <img src="assets/young-handsome-physician-medical-robe-with-stethoscope.jpg" alt="" width="100%">
+                </div>
+                <div class="doc-content">
+                    <b>Sri RamaKrishna Hospital</b>
+                    <p>location:Coimbatore ,Tamilnadu</p>
+                    <p>ratings:5</p>
+                    <a href="">Phone No</a>
+                    <a href="">website</a>
+                </div>
+                </div>
+                <div class="left-doc">
+                    <b>Facilities:</b>
+                    <li><b>Emergency Department:</b>
+                    <p>Our 24/7 emergency department is equipped with state-of-the-art technology and highly trained medical professionals to handle any urgent medical situation.</p></li>
+                    <li><b>Inpatient services:</b>
+                        <p>We offer comfortable and modern inpatient facilities with private rooms, advanced monitoring systems, and personalized care plans.</p></li>
+                    <li><b>Outpatient services:</b>
+                            <p> Specialized clinics in cardiology, oncology, orthopedics, pediatrics, and more, providing expert consultations and treatments.</p></li>
+                </div>
+                </div>
+            </div>
+                <div id="cards-next-slide-2" class="slide-card">
+                    <div class="total">
+                        <div class="doctor-container">
+                            <div>
+                            <img src="assets/doctor-talking-with-his-patient-clinic.jpg" alt="" width="100%">
+                        </div>
+                        <div class="doc-content">
+                            <b>Shanthi Blood Bank</b>
+                            <p>location:Coimbatore ,Tamilnadu</p>
+                            <p>ratings:4.8</p>
+                            <a href="">Phone No</a>
+                            <a href="">website</a>
+                        </div>
+                        </div>
+                        <div class="left-doc-1">
+                            <b>Facilities:</b>
+                            <li><b>Surgical Facilities:</b>
+                            <p>Our 24/7 emergency department is equipped with state-of-the-art technology and highly trained medical professionals to handle any urgent medical situation.</p></li>
+                            <li><b>Inpatient services:</b>
+                                <p>We offer comfortable and modern inpatient facilities with private rooms, advanced monitoring systems, and personalized care plans.</p></li>
+                            <li><b>Outpatient services:</b>
+                                    <p> Specialized clinics in cardiology, oncology, orthopedics, pediatrics, and more, providing expert consultations and treatments.</p></li>
+                        </div>
+                        </div>
+                </div>
+                <div id="cards-next-slide-3" class="slide-card">
+                    <div class="total">
+                        <div class="doctor-container">
+                            <div>
+                            <img src="assets/young-female-doctor-standing-corridor-hospital.jpg" alt="" width="100%">
+                        </div>
+                        <div class="doc-content">
+                            <b>Coimbatore Medical College</b>
+                            <p>location:Coimbatore ,Tamilnadu</p>
+                            <p>ratings:4.2</p>
+                            <a href="">Phone No</a>
+                            <a href="">website</a>
+                        </div>
+                        </div>
+                        <div class="left-doc-2">
+                            <b>Facilities:</b>
+                            <li><b>Pharmacy Services:</b>
+                            <p>Our 24/7 emergency department is equipped with state-of-the-art technology and highly trained medical professionals to handle any urgent medical situation.</p></li>
+                            <li><b>Inpatient services:</b>
+                                <p>We offer comfortable and modern inpatient facilities with private rooms, advanced monitoring systems, and personalized care plans.</p></li>
+                            <li><b>Mental Health Services:</b>
+                                    <p> Specialized clinics in cardiology, oncology, orthopedics, pediatrics, and more, providing expert consultations and treatments.</p></li>
+                        </div>
+                        </div>
+                </div>
+                <div id="cards-next-slide-4" class="slide-card">
+                    <div class="total">
+                        <div class="doctor-container">
+                            <div>
+                            <img src="assets/young-male-psysician-with-patient-hospital.jpg" alt="" width="100%">
+                        </div>
+                        <div class="doc-content">
+                            <b>Lions Blood Bank</b>
+                            <p>location:Coimbatore ,Tamilnadu</p>
+                            <p>ratings:3.5</p>
+                            <a href="">Phone No</a>
+                            <a href="">website</a>
+                        </div>
+                        </div>
+                        <div class="left-doc-3">
+                            <b>Facilities:</b>
+                            <li><b>Support Services:</b>
+                            <p>Our 24/7 emergency department is equipped with state-of-the-art technology and highly trained medical professionals to handle any urgent medical situation.</p></li>
+                            <li><b>Inpatient services:</b>
+                                <p>We offer comfortable and modern inpatient facilities with private rooms, advanced monitoring systems, and personalized care plans.</p></li>
+                            <li><b>Outpatient services:</b>
+                                    <p> Specialized clinics in cardiology, oncology, orthopedics, pediatrics, and more, providing expert consultations and treatments.</p></li>
+                        </div>
+                        </div>
+                </div>
+        <img class="arrow" src="assets/new-arr.png" onclick="PrevImage()" alt="" width="50px" id="left-arrow-1">
+        <img class="arrow-1" id="right-arrow-1" onclick="NextImage()" src="assets/new-arr-1.png" alt="" width="50px">
+    </div>
+</section>
+<section class="sec-3">
+    <div class="container">
+        <div class="row-3">
+            <div>
+                <img src="assets/Hospital family visit-amico.svg" alt="">
+            </div>
+            <div class="blood-num">
+                <h2>Functions of Blood Bank Centers:</h2>
+                <p>Blood bank centers play a crucial role in the healthcare system by collecting, testing, processing, and storing blood and blood components for transfusion. Here is an overview of their key functions and importance.</p>
+                <li>1.Blood Collection</li>
+                <li>2.Testing and Screening</li>
+                <li>3.Processing</li>
+                <li>4.Storage</li>
+                <li>5.Distribution</li>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row-4">
+            <div>
+                <img src="assets/Hospital patient-rafiki.svg" alt="">
+            </div>
+            <div class="blood-num-1">
+                <h2>Importance of Blood Bank Centers:</h2>
+                <p>Blood bank centers are essential to healthcare, providing a lifeline for patients in need. Their operations involve meticulous processes to ensure the safety and availability of blood products, highlighting the importance of public participation in blood donation</p>
+                <li>1.Emergency Situations</li>
+                <li>2.Chronic Conditions</li>
+                <li>3.Surgical Supports</li>
+                <li>4.Maternal and Child health</li>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="logo">
+            <img src="assets/blood-drop.png" alt="" width="32px">
+            <b class="head">Do<b class="head_1">life</b>
+        </b>
+        </div>
+        <div class="row_6">
+            <div>
+                <li>Home</li>
+                <li>Find a donor</li>
+                <li>Find a blood bank</li>
+                <li>Get in touch</li>
+            </div>
+            <div>
+                <li>Information</li>
+                <li>About</li>
+                <li>Health</li>
+                <li>About</li>
+            </div>
+            <div class="footer-contact">
+                <div>
+                    <h2 class="contact">Contact us</h2>
+                </div>
+                <div>
+                    <span>Mail:</span>
+                    <a href="mailto:sjnjega49616@gmail.com">sjnjega49616@gmail.com</a>
+                </div>
+                <div>
+                    <span>Mobile No:</span>
+                    <a href="tel-9123509524">+919123509524</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row_7">
+            <div>
+                <img src="assets/facebook.png" alt="" width="30px">
+            </div>
+            <div>
+                <img src="assets/instagram.png" alt="" width="30px">
+            </div>
+            <div>
+                <img src="assets/twitter.png" alt="" width="30px">
+            </div>
+            <div>
+                <img src="assets/gmail.png" alt="" width="30px">
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="bloodbank.js"></script>
+</body>
+</html>
+
+
